@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/colorBackground"
+    tools:context=".EditProfileActivity">
+
+    <!-- Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Edit Profile"
+        app:titleTextColor="@color/colorOnPrimary" />
+
+    <!-- ScrollView for form -->
+    <ScrollView
+        android:id="@+id/scrollView_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Phone -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Age -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Height -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height (cm)"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Weight -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (kg)"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Blood Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Type"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_blood_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+
+            <!-- Medical Conditions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Conditions"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/et_medical_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface" />
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorOnPrimary"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_border"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:backgroundTint="#FF3B30"
+                android:textColor="@color/colorWhite"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_border"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

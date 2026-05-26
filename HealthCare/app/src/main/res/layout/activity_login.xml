@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Icon -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_health_symbol"
+            android:layout_marginTop="10dp"/>
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HealthCare Plus"
+            android:textSize="34sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+
+        <!-- App Motto -->
+        <TextView
+            android:id="@+id/appMotto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caring for your health, every day"
+            android:textSize="22sp"
+            android:textColor="@color/colorOnSurface"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
+
+        <!-- Email or Phone Input -->
+        <EditText
+            android:id="@+id/emailOrPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email or Phone Number"
+            android:inputType="text"
+            android:padding="15dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/colorOnSurface"
+            android:textSize="20sp"/>
+
+        <!-- PIN Input -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter PIN"
+            android:inputType="numberPassword"
+            android:padding="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/colorOnSurface"
+            android:textSize="22sp"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with PIN"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="24dp"
+            android:padding="16dp"
+            android:background="@drawable/button_border"/>
+
+        <!-- Forgot PIN -->
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot PIN?"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="8dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@drawable/button_border"/>
+
+        <!-- Continue as Guest -->
+        <Button
+            android:id="@+id/guestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue as Guest"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="20sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@drawable/button_border"/>
+
+    </LinearLayout>
+</ScrollView>

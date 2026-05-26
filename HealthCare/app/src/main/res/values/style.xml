@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- System-controlled theme (Light/Dark from phone) -->
+    <style name="Theme.HealthCare"
+        parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- DO NOT ADD COLORS -->
+    </style>
+
+</resources>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/colorBackground">
+
+    <!-- Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Reset PIN"
+        app:titleTextColor="@color/colorOnPrimary" />
+
+    <!-- ScrollView Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- Email or Phone -->
+            <EditText
+                android:id="@+id/emailOrPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email or Phone Number"
+                android:inputType="textEmailAddress|phone"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"/>
+
+            <!-- New PIN -->
+            <EditText
+                android:id="@+id/newPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New PIN"
+                android:inputType="numberPassword"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_background"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"/>
+
+            <!-- Confirm PIN -->
+            <EditText
+                android:id="@+id/confirmPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm PIN"
+                android:inputType="numberPassword"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/edit_text_background"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnSurface"/>
+
+            <!-- Reset PIN Button -->
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset PIN"
+                android:textSize="20sp"
+                android:textColor="@color/colorOnPrimary"
+                android:background="@drawable/button_border"
+                android:padding="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

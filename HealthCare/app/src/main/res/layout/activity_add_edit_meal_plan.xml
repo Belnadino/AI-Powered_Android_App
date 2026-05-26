@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:background="@color/colorBackground">
+
+    <!-- HEADER: Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Meal Planner"
+        app:titleTextColor="@color/colorOnPrimary" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_meal_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meal Name"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/et_meal_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="HH:mm"
+                android:layout_marginTop="12dp"
+                android:inputType="time"/>
+
+            <EditText
+                android:id="@+id/et_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Start Date (YYYY-MM-DD)"
+                android:layout_marginTop="12dp"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <EditText
+                android:id="@+id/et_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="End Date (YYYY-MM-DD)"
+                android:layout_marginTop="12dp"
+                android:focusable="false"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/btn_save_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Plan"
+                android:textSize="20sp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_border"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/ic_health_symbol"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HealthCare">
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_health_symbol"
+            android:theme="@style/Theme.HealthCare">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".MedicationActivity" />
+        <activity android:name=".ExerciseActivity" />
+        <activity android:name=".MealActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".VerifyOtpActivity" />
+        <activity android:name=".PinSetupActivity" />
+        <activity android:name=".planner.AddMedicationActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".planner.AddExercisePlanActivity" />
+        <activity android:name=".planner.ExerciseTimerActivity" />
+        <activity android:name=".planner.MealPlansListActivity"/>
+        <activity android:name=".AddEditMealPlanActivity"/>
+        <activity android:name=".planner.MealReportActivity" />
+        <activity android:name=".planner.MedicationReportActivity" />
+        <activity android:name=".planner.ExerciseReportActivity" />
+        <activity android:name=".planner.FeedbackDetailsActivity" />
+        <activity android:name=".ResetPinActivity" />
+        <activity android:name=".ChangePinActivity" />
+        <activity android:name=".planner.MedicationPlansListActivity" />
+        <activity android:name=".planner.ExercisePlanListActivity" />
+        <activity android:name=".CaregiverActivity" />
+        <activity android:name=".AddEditCaregiverActivity" />
+
+        <receiver
+            android:name=".planner.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".reminder.ReminderReceiver"
+            android:exported="false"/>
+        <activity
+            android:name=".VerifyEmailLinkActivity"
+            android:exported="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="healthcare-d92b4.firebaseapp.com"
+                    android:pathPrefix="/__/auth/links" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

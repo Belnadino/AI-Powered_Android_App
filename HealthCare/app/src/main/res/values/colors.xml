@@ -1,0 +1,28 @@
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#6650A3</color>
+    <color name="colorPrimaryContainer">#6650A3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">#03DAC6</color>
+    <color name="colorSecondaryContainer">#6650A3</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorOnBackground">#212121</color>
+
+    <!-- Optional white aliases -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Dark mode overrides -->
+    <color name="colorBackgroundDark">#121212</color>
+    <color name="colorSurfaceDark">#1E1E1E</color>
+    <color name="colorOnSurfaceDark">#FFFFFF</color>
+    <color name="colorOnPrimaryDark">#FFFFFF</color>
+    <color name="gold">#FFD700</color>
+</resources>
